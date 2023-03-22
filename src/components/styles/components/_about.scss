@@ -1,0 +1,67 @@
+.container-about {
+  display: flex;
+  margin: 80px;
+  align-items: center;
+  gap: 50px;
+
+  .image-about {
+    max-width: 100%;
+    width: 400px;
+  }
+  .about-text {
+    max-width: 600px;
+    .about-title {
+      font-size: 1rem;
+      color: $color-font;
+    }
+    .about-info {
+      max-width: 400px;
+      font-size: 1.8rem;
+      line-height: 40px;
+      margin: 10px 0 10px 0;
+      color: $color-font;
+    }
+    .information-about {
+      font-size: .9rem;
+      margin-bottom: 10px;
+      color: $color-font;
+    }
+    .contact {
+        background-color: $color-base;
+        width: 130px;
+        height: 40px;
+        border: none;
+        color: $color-body;
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding: 0 3px 0 3px;
+        border-radius: 5px;
+        transition: .3s;
+        cursor: pointer;
+
+        &:hover {
+          background-color: $color-font;
+          color: $color-body;
+        }
+    }
+  }
+}
+
+@media(max-width: 1071px) {
+  .container-about {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 5px 50px 5px;
+    gap: 10px;
+    .about-text {
+      .about-title {
+        margin-bottom: 15px;
+      }
+      .about-info {
+        margin: 0 auto; 
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

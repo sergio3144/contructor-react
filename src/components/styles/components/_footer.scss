@@ -1,0 +1,43 @@
+footer {
+  background-color: $color-base;
+  margin-top: 50px;
+  padding: 50px 80px 50px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  @media(max-width: 900px ) {
+    & {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .logo {
+    font-size: 1.7rem;
+  }
+  .services-footer {
+    .container-items {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+      font-size: .7rem;
+      cursor: pointer;
+      @media(max-width: 900px ) {
+        & {
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          margin: 20px 0 20px 0;
+        }
+      }
+    }
+  }
+  .redes {
+    display: flex;
+    gap: 20px;
+    .icono {
+      width: 30px;
+      cursor: pointer;
+    }
+  }
+}

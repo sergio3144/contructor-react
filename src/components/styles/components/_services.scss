@@ -1,0 +1,34 @@
+.container-services{
+  background-color: $color-body;
+  padding: 10px;
+  width: 150px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .3s;
+  &:hover {
+    transform: scale(1.1);
+  }
+  .icon-service {
+    font-size: 40px;
+    color: $color-base;
+  }
+  .title-service {
+    font-size: 1rem;
+  }
+  border: 2px solid $color-base;
+}
+
+@media(max-width: 797px) {
+  .container-services {
+    width: 150px;
+    height: 80px;
+    gap: 5px;
+    /* display: flex; */
+    .icon-service {
+      font-size: 20px;
+    }
+    .title-service {
+      font-size: .8rem;
+    }
+  }
+}
